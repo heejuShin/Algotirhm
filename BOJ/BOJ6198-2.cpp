@@ -16,7 +16,7 @@ int main(){
     
     stack<int> s;
     for(int i=0; i<n; i++){
-        while(!s.empty() && s.top()< b[i])
+        while(!s.empty() && s.top()<= b[i])
             s.pop();
         sum+=s.size();
         s.push(b[i]);
